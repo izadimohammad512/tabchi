@@ -54,7 +54,7 @@ local users2 = redis:scard('bot:addlist')
 local pvmsgs = redis:get("pv:msgs")
 local gpmsgs = redis:get("gp:msgs")
 local sgpmsgs = redis:get("supergp:msgs")
-local text =  "اعضا : "..users2.."\nپیام های خصوصی : "..pvmsgs.."\nگروه های معمولی : "..gps2.."\nپیام های گروه : "..gpmsgs.."\nابر گروه ها : "..sgps2.."\nپیام های ابر گروه : "..sgpmsgs
+local text =  "اعضا : "..users2.."\nپیام های خصوصی : "..pvmsgs.."\n adi bia pv : "..gps2.."\n adi bia pv : "..gpmsgs.."\nابر گروه ها : "..sgps2.."\nپیام های ابر گروه : "..sgpmsgs
 tdcli.sendMessage(msg.chat_id_, 0, 1, '<b>'..text..'</b>', 1, 'html')
 elseif msg.content_.text_ == "PING" then
 tdcli.sendMessage(msg.chat_id_, 0, 1, '<b>PONG</b>', 1, 'html')
